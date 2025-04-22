@@ -1,4 +1,4 @@
-from flask import Flask, Blueprint
+from flask import Blueprint, jsonify
 from app.utils.templates import get_available_templates
 
 bp = Blueprint('templates', __name__, url_prefix='/api/templates')
