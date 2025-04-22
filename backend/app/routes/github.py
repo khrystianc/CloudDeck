@@ -13,4 +13,8 @@ def init_github_repo():
     return jsonify({"error": "Missing required fields"}), 400
 
   # Simulated response for testing
-  return jsonify({"message": "Github repo initialized succesfully", "repo_url": f"https://github.com/your-username/{repo_name}", "stack": stack}), 200
+  return jsonify({
+    "message": "Github repo initialized succesfully",
+    "repo_url": f"https://github.com/your-username/{repo_name}",
+    "stack": stack
+  }), 200
